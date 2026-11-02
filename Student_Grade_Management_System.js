@@ -88,6 +88,19 @@ function handleSubmit(event) {
     console.log("Your letter grade is, drum roll please🥁:", letterGrade);
 }
 
+function handleReset(event){
+    resultsSection.replaceChildren();
+
+    const heading = document.createElement("h2");
+    heading.textContent = "Results"
+
+    const message = document.createElement('p');
+    message.textContent = 'Your results will appear here after calculations☀️';
+
+    resultsSection.append(heading, message)
+}
 gradeForm.addEventListener("submit", handleSubmit);
+
+gradeForm.addEventListener("reset", handleReset);
 
  console.log('The average is', calculateAverage(50,90,80,95))

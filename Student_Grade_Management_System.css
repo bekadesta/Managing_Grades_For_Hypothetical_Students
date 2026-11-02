@@ -1,15 +1,25 @@
 * {
     box-sizing: border-box;
     padding: 3px;
+    
 }
 
 body {
-    margin:0;
-    padding: 10px 200px;
+    margin: 0;
+    padding: 50px 290px;
     font-family: Arial, sans-serif;
-    background-color: #e9ede9;
-    color: #123723;
+
+    background-color: #f4f6f3;
+
+    background-image:
+        linear-gradient(rgba(49, 91, 69, 0.12) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(49, 91, 69, 0.12) 1px, transparent 1px);
+
+    background-size: 30px 30px;
+
+    color: #26352d;
     line-height: 1.6;
+
 }
 
 .container {
